@@ -11,11 +11,6 @@ import cz.kavan.radek.maprani.security.dto.UserDetail;
 import cz.kavan.radek.maprani.user.model.User;
 import cz.kavan.radek.maprani.user.repository.UserRepository;
 
-/**
- * This class loads the requested user by using a Spring Data JPA repository.
- * 
- * @author Petri Kainulainen
- */
 public class RepositoryUserDetailsService implements UserDetailsService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(RepositoryUserDetailsService.class);

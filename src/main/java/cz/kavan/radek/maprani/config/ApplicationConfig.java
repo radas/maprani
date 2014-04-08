@@ -20,7 +20,7 @@ public class ApplicationConfig implements WebApplicationInitializer {
     public void onStartup(ServletContext servletContext) throws ServletException {
         //If you want to use the XML configuration, comment the following two lines out.
         AnnotationConfigWebApplicationContext rootContext = new AnnotationConfigWebApplicationContext();
-        rootContext.register(ExampleApplicationContext.class);
+        rootContext.register(ApplicationContext.class);
 
         //If you want to use the XML configuration, uncomment the following lines.
         //XmlWebApplicationContext rootContext = new XmlWebApplicationContext();
