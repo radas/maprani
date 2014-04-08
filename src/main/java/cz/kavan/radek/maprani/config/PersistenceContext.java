@@ -16,17 +16,14 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import com.jolbox.bonecp.BoneCPDataSource;
 
-/**
- * @author Petri Kainulainen
- */
 @Configuration
 @EnableJpaRepositories(basePackages = { "cz.kavan.radek.maprani.user.repository" })
 @EnableTransactionManagement
 public class PersistenceContext {
 
     private static final String[] PROPERTY_PACKAGES_TO_SCAN = {
-            "net.petrikainulainen.spring.social.signinmvc.common.model",
-            "net.petrikainulainen.spring.social.signinmvc.user.model" };
+            "cz.kavan.radek.maprani.common.model",
+            "cz.kavan.radek.maprani.user.model" };
 
     protected static final String PROPERTY_NAME_DATABASE_DRIVER = "db.driver";
     protected static final String PROPERTY_NAME_DATABASE_PASSWORD = "db.password";
